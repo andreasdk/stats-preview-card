@@ -18,5 +18,83 @@ html {
     --stat-trans-white: hsla(0, 0%, 100%, 0.6);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--white-color);
+}
+
+.card__container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.card {
+    margin: 0 auto;
+    background: var(--dark-desat-blue);
+    flex-direction: column;
+    max-width: 32rem;
+    border-radius: .8rem;
+}
+
+.image_column {
+    background-image: url('images/image-header-mobile.jpg');
+    background-blend-mode: multiply;
+    background-color: var(--soft-violet);
+    filter: opacity(70%) brightness(160%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24rem;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+
+.text_column {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 3rem;
+    text-align: center;
+}
+
+.text_column__header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+.text_column__header span {
+    color: var(--soft-violet);
+}
+
+.text_column__copy p {
+    font-size: 1.5rem;
+    color: var(--main-trans-white);
+    line-height: 2.5rem;
+}
+
+.text_column__stats__info h2 {
+    font-size: 2.4rem;
+}
+
+.text_column__stats__info p {
+    font-size: 1.2rem;
+    font-family: Lexend Deca, sans-serif;
+    text-transform: uppercase;
+    color: var(--stat-trans-white);
+}
+
+
+
+
+.attribution {
+    margin: 1.5em auto 0;
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
