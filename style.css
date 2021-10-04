@@ -28,7 +28,6 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
 }
 
 .card {
@@ -97,4 +96,37 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 641px) {
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 110rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .image_column {
+        background-image: url('images/image-header-desktop.jpg');
+        height: 44.6rem;
+        width: 54rem;
+        border-top-left-radius: 0;
+    }
+    .text_column {
+        max-width: 50rem;
+        padding: 6rem;
+        text-align: left;
+    }
+    .text_column__header h1 {
+        font-size: 3.6rem;
+    }
+    .text_column__copy {
+        max-width: 35rem;
+    }
+    .text_column__stats {
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
